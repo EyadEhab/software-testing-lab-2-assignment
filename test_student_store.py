@@ -87,7 +87,7 @@ class TestItem(unittest.TestCase):
         Fix: pass a value above 100 to trigger the error.
         """
         with self.assertRaises(ValueError):
-            self.pen.apply_discount(100)   # ← BUG: 50% is a valid discount
+            self.pen.apply_discount(190)   # ← BUG: 50% is a valid discount
 
 
 class TestStoreFunctions(unittest.TestCase):
